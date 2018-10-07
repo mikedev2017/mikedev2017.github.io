@@ -287,16 +287,16 @@
             <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#animation">Animation</a>
+            <a class="nav-link" href="#" data-href="animation">Animation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./videos.html">Video</a>
+            <a class="nav-link" href="#" data-href="video">Video</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./doodles.html">Doodles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#aboutSection">About</a>
+            <a class="nav-link" href="#" data-href="aboutSection">About</a>
           </li>
         </ul>
       </div>
@@ -308,10 +308,10 @@
     <div id="aboutSection" class="bg-info py-5">
       <div class="col-lg-10 mx-auto pt-5">
         <div class="row">
-          <div class="col-lg-4 pb-5 text-center">
-            <img class="rounded-circle mt-5" src="https://yt3.ggpht.com/a-/AN66SAy_0PpqCtu9MK_Z3vRXErYG0rKxXkrN1ebvZw=s288-mo-c-c0xffffffff-rj-k-no" alt="avatar">
+          <div class="col-lg-4 pb-5 text-center" id="profileAvatar">
+            <img class="img-fluid rounded-circle mt-5" src="./images/profile-caricature.jpg" alt="avatar">
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8" id="aboutDescription">
             <p class="display-4 d-none d-md-block text-light">Hi! My name is Mike Williams and I'm an Artist. I make motion graphics, 
               2D and 3D animations, videos, video games, websites, paintings...
             </p>
@@ -325,7 +325,9 @@
       </div>
     </div>
     
-    <div class="container pt-5 pb-4" id="animation">
+    <div class="container py-5" id="animation">
+	  <p class="display-1 d-none d-md-block text-center">#Animation</p>
+	  <p class="display-4 d-md-none d-lg-none d-xl-none text-center">#Animation</p>
       <div class="card-deck pb-3 col-lg-10 mx-auto">
         <div class="card bg-dark shadow text-white" data-toggle="modal" data-target="#animationModal1">
           <img class="card-img" src="https://i.ytimg.com/vi/ySvTk0vfxhg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDurXfnhMhgt6lJMPQs7Qy-0leLUA" alt="Former Things">
@@ -399,6 +401,33 @@
       </div>
 
     </div>
+
+	<div class="bg-secondary py-5 mx-auto" id="video">
+	  <p class="display-1 text-center">#Video</p>
+      <div class="card-deck col-lg-10 mx-auto">
+        <div class="card bg-dark shadow text-white" data-toggle="modal" data-target="#animationModal10">
+          <img class="card-img" src="https://www.ticketbooth.com.au/ticketing/wp-content/uploads/2016/03/34.png" alt="Former Things">
+          <div class="card-img-overlay poster">
+            <h5 class="card-title bg-dark text-light text-center animation-thumbnail">Da Vinci Sketch</h5>
+          </div>
+        </div>
+
+        <div class="card bg-dark shadow text-white" data-toggle="modal" data-target="#animationModal11">
+          <img class="card-img" src="https://pixel.nymag.com/imgs/daily/vulture/2018/04/26/king-kong-live-on-broadway/26-king-kong-alive-posters.w330.h412.jpg" alt="Former Things">
+          <div class="card-img-overlay poster">
+            <h5 class="card-title bg-dark text-light text-center animation-thumbnail">Motion Graphics</h5>
+          </div>
+        </div>
+
+        <div class="card bg-dark shadow text-white" data-toggle="modal" data-target="#animationModal12">
+          <img class="card-img" src="https://static.posters.cz/image/750/posters/death-note-from-the-shadows-i58005.jpg" alt="Former Things">
+          <div class="card-img-overlay poster">
+            <h5 class="card-title bg-dark text-light text-center animation-thumbnail">Motion Graphics</h5>
+          </div>
+        </div>
+
+      </div>
+	</div>
     
   </div>
 

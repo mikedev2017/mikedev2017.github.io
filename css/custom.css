@@ -56,3 +56,8 @@ body {
   right: 0;
   margin: auto;
 }
+
+div.card-img-overlay.poster: hover {
+  width: 300px;
+  transition: width 2s;
+}

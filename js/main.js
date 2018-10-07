@@ -46,3 +46,19 @@ myModal5.on('hide.bs.modal', function(){
 myModal6.on('hide.bs.modal', function(){
   $('#animationPlayer06')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 })
+
+//animate scroll for navigation
+var link = $('a.nav-link');
+
+link.on('click', function(e){
+	var selectedLink = e.target;
+	//var chosenElement = selectedLink.attr('id');
+	var dataHref = selectedLink.dataset.href;
+	if(dataHref) {
+	console.log($('#'+dataHref));
+	var thisElement = document.getElementById(dataHref);
+	e.preventDefault();
+	thisElement.scrollIntoView({behavior: "smooth", block: "start"});
+	}
+
+});

@@ -4,6 +4,39 @@
  transition-property: opacity;
 }*/
 
+@media (min-width: 390px) {
+  p.bio {
+    font-size: 20px;
+  }
+  p.motto {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 576px) {
+  p.bio {
+    font-size: 20px;
+  }  p.motto {    font-size: 26px;  }
+}
+
+@media (min-width: 768px) {
+  p.bio {
+    font-size: 26px;
+  }  p.motto {    font-size: 35px;  }
+}
+
+@media (min-width: 992px) {
+  p.bio {
+    font-size: 32px;
+  }  p.motto {    font-size: 45px;  }
+}
+
+@media (min-width: 1200px) {
+  p.bio {
+    font-size: 40px;
+  }  p.motto {    font-size: 56px;  }
+}
+
 html,
 body {
    margin:0;

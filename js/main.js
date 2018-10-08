@@ -55,6 +55,7 @@ link.on('click', function(e){
 	//var chosenElement = selectedLink.attr('id');
 	var dataHref = selectedLink.dataset.href;
 	if(dataHref) {
+	$('.navbar-toggler').click();
 	console.log($('#'+dataHref));
 	var thisElement = document.getElementById(dataHref);
 	e.preventDefault();

@@ -16,25 +16,63 @@
 @media (min-width: 576px) {
   p.bio {
     font-size: 20px;
-  }  p.motto {    font-size: 26px;  }
+  }
+  p.motto {
+    font-size: 26px;
+  }
+
+  .carousel-doodle img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .modal-lg {
+      max-width: 90vw;
+  }
 }
 
 @media (min-width: 768px) {
   p.bio {
     font-size: 26px;
-  }  p.motto {    font-size: 35px;  }
+  }
+  p.motto {
+    font-size: 35px;
+  }
+
+  .carousel-doodle img {
+    max-width: 100%;
+    height: 40vh;
+    margin: auto;
+  }
 }
 
 @media (min-width: 992px) {
   p.bio {
     font-size: 32px;
-  }  p.motto {    font-size: 45px;  }
+  }
+  p.motto {
+    font-size: 45px;
+  }
+
+  .modal-lg {
+      max-width: 100vw;
+  }
+
+  .carousel-doodle img {
+    max-width: 100%;
+    height: 80vh;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1200px) {
   p.bio {
     font-size: 40px;
-  }  p.motto {    font-size: 56px;  }
+  }
+  p.motto {
+    font-size: 56px;
+  }
 }
 
 html,
@@ -69,6 +107,10 @@ body {
   opacity: 0.5;
 }
 
+.carousel-indicators {
+  bottom: -40px;
+}
+
 .carousel-indicators > li {
   width: 15px;
   height: 15px;
@@ -90,7 +132,17 @@ body {
   margin: auto;
 }
 
+.card-img.doodle {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 div.card-img-overlay.poster: hover {
   width: 300px;
   transition: width 2s;
+}
+
+.modal-body {
+  padding: 2rem;
 }

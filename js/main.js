@@ -24,7 +24,7 @@ var myModal3 = $('#animationModal3');
 var myModal4 = $('#animationModal4');
 var myModal5 = $('#animationModal5');
 var myModal6 = $('#animationModal6');
-var myAniModal7 = $('#animationModal7');
+var myAniModal8 = $('#animationModal8');
 var myModal7 = $('#videoModal1');
 var myModal8 = $('#videoModal2');
 var myModal9 = $('#videoModal3');
@@ -58,12 +58,12 @@ myModal6.on('hide.bs.modal', function(){
   $('#animationPlayer06')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 })
 
-var video7 = $('#animationPlayer07');
+var video8 = $('#animationPlayer08');
 
-myAniModal7.on('hide.bs.modal', function(){
-  var videoSrc = video4.attr('src');
-  video7.attr('src','');
-  video7.attr('src',videoSrc);
+myAniModal8.on('hide.bs.modal', function(){
+  var videoSrc = video8.attr('src');
+  video8.attr('src','');
+  video8.attr('src',videoSrc);
 })
 
 //video modals

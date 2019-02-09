@@ -25,6 +25,10 @@ var myModal4 = $('#animationModal4');
 var myModal5 = $('#animationModal5');
 var myModal6 = $('#animationModal6');
 var myAniModal8 = $('#animationModal8');
+var myAniModal9 = $('#animationModal9');
+var myAniModal10 = $('#animationModal10');
+var myAniModal11 = $('#animationModal11');
+var myAniModal12 = $('#animationModal12');
 var myModal7 = $('#videoModal1');
 var myModal8 = $('#videoModal2');
 var myModal9 = $('#videoModal3');
@@ -64,6 +68,38 @@ myAniModal8.on('hide.bs.modal', function(){
   var videoSrc = video8.attr('src');
   video8.attr('src','');
   video8.attr('src',videoSrc);
+})
+
+var video9 = $('#animationPlayer09');
+
+myAniModal9.on('hide.bs.modal', function(){
+  var videoSrc = video9.attr('src');
+  video9.attr('src','');
+  video9.attr('src',videoSrc);
+})
+
+var video10 = $('#animationPlayer10');
+
+myAniModal10.on('hide.bs.modal', function(){
+  var videoSrc = video10.attr('src');
+  video10.attr('src','');
+  video10.attr('src',videoSrc);
+})
+
+var video11 = $('#animationPlayer11');
+
+myAniModal11.on('hide.bs.modal', function(){
+  var videoSrc = video11.attr('src');
+  video11.attr('src','');
+  video11.attr('src',videoSrc);
+})
+
+var video12 = $('#animationPlayer12');
+
+myAniModal12.on('hide.bs.modal', function(){
+  var videoSrc = video12.attr('src');
+  video12.attr('src','');
+  video12.attr('src',videoSrc);
 })
 
 //video modals

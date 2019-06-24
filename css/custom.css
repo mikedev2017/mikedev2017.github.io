@@ -610,6 +610,10 @@ div#titleWrapper {
     padding-left: 25px;
 }
 
+div#contactSection {
+  font-size: 20px;
+}
+
 .video-wrapper.col-lg-6.mx-auto {
     padding-top: 30px;
 }

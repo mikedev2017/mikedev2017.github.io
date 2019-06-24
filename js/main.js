@@ -1,5 +1,5 @@
 //open modal with the selected doodle
-var myModal = $('#doodleModalCenter');
+var myModal = $('#illustrationModalCenter');
 
 myModal.on('show.bs.modal', function(e){
   var slideShow = $('.carousel');

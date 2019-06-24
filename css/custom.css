@@ -12,6 +12,158 @@
   .card.doodle:hover {
     opacity: 1.0;
   }
+  .card-img.doodle {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /*CSS Pong Styles*/
+  #pongContainer
+  {
+  margin:auto;
+  width:350px;
+  height:310px;
+  }
+  #pongWrapper
+  {
+  margin:auto;
+  width:350px;
+  height:300px;
+  overflow:hidden;
+  }
+  #leftPaddle
+  {
+  animation: leftPaddle 3s infinite;
+  -webkit-animation: leftPaddle 3s infinite;
+  float:left;
+  width:30px;
+  height:150px;
+  background-color:#FFFFFF;
+  overflow:hidden;
+  position:relative;
+  }
+  #rightPaddle
+  {
+  animation: rightPaddle 3s infinite;
+  -webkit-animation: rightPaddle 3s infinite;
+  position:relative;
+  float:right;
+  width:30px;
+  height:150px;
+  background-color:#FFFFFF;
+  overflow:hidden;
+  }
+  #puck
+  {
+  animation:puck 3s infinite linear;
+  -webkit-animation: puck 3s infinite linear;
+  width:30px;
+  height:30px;
+  background-color:#FFFFFF;
+  overflow:hidden;
+  position:relative;
+  }
+  @keyframes puck
+  {
+  0%{top:135px; left:0px;}
+  25%{top:135px; left:260px;}
+  50%{top:60px; left:0px;}
+  75%{top:90px; left:260px;}
+  100%{top:135px; left:0px;}
+  }
+  @keyframes leftPaddle
+  {
+  0%{top:75px; left:0px;}
+  15%{top:90px; left:0px;}
+  35%{top:75px; left:0px;}
+  50%{top:5px; left:0px;}
+  85%{top:75px; left:0px;}
+  95%{top:110px; left:0px;}
+  100%{top:75px; left:0px;}
+  }
+  @keyframes rightPaddle
+  {
+  0%{top:75px; left:0px;}
+  15%{top:75px; left:0px;}
+  25%{top:145px; left:0px;}
+  40%{top:145px; left:0px;}
+  50%{top:60px; left:0px;}
+  75%{top:5px; left:0px;}
+  100%{top:75px; left:0px;}
+  }
+  /* Safari and Chrome animations */
+  @-webkit-keyframes puck
+  {
+  0%{top:135px; left:0px;}
+  25%{top:135px; left:260px;}
+  50%{top:60px; left:0px;}
+  75%{top:90px; left:260px;}
+  100%{top:135px; left:0px;}
+  }
+  @-webkit-keyframes leftPaddle
+  {
+  0%{top:75px; left:0px;}
+  15%{top:90px; left:0px;}
+  35%{top:75px; left:0px;}
+  50%{top:5px; left:0px;}
+  85%{top:75px; left:0px;}
+  95%{top:110px; left:0px;}
+  100%{top:75px; left:0px;}
+  }
+  @-webkit-keyframes rightPaddle
+  {
+  0%{top:75px; left:0px;}
+  25%{top:145px; left:0px;}
+  50%{top:60px; left:0px;}
+  75%{top:5px; left:0px;}
+  100%{top:75px; left:0px;}
+  }
+
+  .navbar {
+      padding: .5rem 0.58rem .5rem 0rem;
+  }
+
+  .navbar-brand {
+      display: inline-block;
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      margin-left: 30px;
+      margin-right: 1rem;
+      margin-top: -40px;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+      z-index: 2;
+  }
+
+  button.navbar-toggler {
+      margin-top: -50px;
+  }
+
+  .navbar-collapse {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: #000;
+      z-index: 1;
+      padding: 45px 0px 0 20px;
+      margin-left: -16px;
+      margin-right: -9px;
+      margin-top: -41px;
+  }
+
+  li.nav-item {
+      text-align:center;
+  }
+
+  li.nav-item:hover {
+    background-color: #999;
+  }
+
 }
 
 @media (min-width: 576px) {
@@ -25,10 +177,16 @@
 
   }
 
-  .carousel-doodle img {
+  .carousel-doodle img, .carousel-illustration img {
     max-width: 100%;
     height: 70vh;
     margin: auto;
+  }
+
+  .card-img.doodle {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 
   .modal-lg {
@@ -39,6 +197,153 @@
     height: 70vh;
     width: auto;
   }
+
+  /*CSS Pong Styles*/
+  #pongContainer
+  {
+  margin:auto;
+  width:650px;
+  height:310px;
+  }
+  #pongWrapper
+  {
+  margin:auto;
+  width:600px;
+  height:300px;
+  overflow:hidden;
+  }
+  #leftPaddle
+  {
+  animation: leftPaddle 4s infinite;
+  -webkit-animation: leftPaddle 4s infinite;
+  float:left;
+  width:30px;
+  height:150px;
+  background-color:#FFFFFF;
+  overflow:hidden;
+  position:relative;
+  }
+  #rightPaddle
+  {
+  animation: rightPaddle 4s infinite;
+  -webkit-animation: rightPaddle 4s infinite;
+  position:relative;
+  float:right;
+  width:30px;
+  height:150px;
+  background-color:#FFFFFF;
+  overflow:hidden;
+  }
+  #puck
+  {
+  animation:puck 4s infinite linear;
+  -webkit-animation: puck 4s infinite linear;
+  width:30px;
+  height:30px;
+  background-color:#FFFFFF;
+  overflow:hidden;
+  position:relative;
+  }
+  @keyframes puck
+  {
+  0%{top:135px; left:0px;}
+  25%{top:135px; left:510px;}
+  50%{top:60px; left:0px;}
+  75%{top:90px; left:510px;}
+  100%{top:135px; left:0px;}
+  }
+  @keyframes leftPaddle
+  {
+  0%{top:75px; left:0px;}
+  15%{top:90px; left:0px;}
+  35%{top:75px; left:0px;}
+  50%{top:5px; left:0px;}
+  85%{top:75px; left:0px;}
+  95%{top:110px; left:0px;}
+  100%{top:75px; left:0px;}
+  }
+  @keyframes rightPaddle
+  {
+  0%{top:75px; left:0px;}
+  15%{top:75px; left:0px;}
+  25%{top:145px; left:0px;}
+  40%{top:145px; left:0px;}
+  50%{top:60px; left:0px;}
+  75%{top:5px; left:0px;}
+  100%{top:75px; left:0px;}
+  }
+  /* Safari and Chrome animations */
+  @-webkit-keyframes puck
+  {
+  0%{top:135px; left:0px;}
+  25%{top:135px; left:510px;}
+  50%{top:60px; left:0px;}
+  75%{top:90px; left:510px;}
+  100%{top:135px; left:0px;}
+  }
+  @-webkit-keyframes leftPaddle
+  {
+  0%{top:75px; left:0px;}
+  15%{top:90px; left:0px;}
+  35%{top:75px; left:0px;}
+  50%{top:5px; left:0px;}
+  85%{top:75px; left:0px;}
+  95%{top:110px; left:0px;}
+  100%{top:75px; left:0px;}
+  }
+  @-webkit-keyframes rightPaddle
+  {
+  0%{top:75px; left:0px;}
+  25%{top:145px; left:0px;}
+  50%{top:60px; left:0px;}
+  75%{top:5px; left:0px;}
+  100%{top:75px; left:0px;}
+  }
+
+  .navbar {
+      padding: .5rem 4.58rem .5rem 0rem;
+  }
+
+  .navbar-brand {
+      display: inline-block;
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      margin-left: 30px;
+      margin-right: 1rem;
+      margin-top: -40px;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+      z-index: 2;
+  }
+
+  button.navbar-toggler {
+      margin-top: -50px;
+  }
+
+  .navbar-collapse {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: #000;
+      z-index: 1;
+      padding: 45px 0px 0 20px;
+      margin-left: -16px;
+      margin-right: -73px;
+      margin-top: -41px;
+  }
+
+  li.nav-item {
+      text-align:center;
+  }
+
+  li.nav-item:hover {
+    background-color: #999;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -52,16 +357,27 @@
 
   }
 
-  .carousel-doodle img {
+  .carousel-doodle img, .carousel-illustration img {
     max-width: 100%;
     height: 40vh;
     margin: auto;
+  }
+
+  .card-img.doodle {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
   }
 
   .carousel-self-portrait img {
     height: 60vh;
     width: auto;
   }
+
+  .navbar {
+      padding: .5rem 0.58rem .5rem 0rem;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -79,7 +395,7 @@
       max-width: 100vw;
   }
 
-  .carousel-doodle img {
+  .carousel-doodle img, .carousel-illustration img {
     max-width: 100%;
     height: 80vh;
     margin: auto;
@@ -88,6 +404,36 @@
   .carousel-self-portrait img {
     height: 60vh;
     width: auto;
+  }
+
+  .navbar {
+      padding: .5rem 4.58rem .5rem 0rem;
+  }
+
+  .navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-top: 3px;
+    margin-left: 30px;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+  .navbar-collapse {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: #000;
+      z-index: 1;
+      padding: 0;
+      margin-left: 0;
+      margin-top: 0;
   }
 }
 
@@ -131,12 +477,42 @@ body {
    height:59px;   /* Height of the footer */
 }
 
-.navbar {
-  background-color: #88CCFF;
+#footer .nav-link {
+  padding: 0.8rem 1rem;
 }
 
-.card:hover {
-  opacity: 0.5;
+#footer ul.nav {
+  background-image: linear-gradient(to bottom, #FFF, #FFF 35%, #000 35%, #000 65%, #FFF 65%);
+  padding-right: 15px;
+}
+
+.navbar {
+  position:relative;
+  height: 40px;
+  background-color: #000;
+  margin-top: 50px;
+  max-width: 700px;
+}
+
+.navbar.col-md-6 {
+  position:relative;
+  height: 40px;
+  background-color: #000;
+  margin-top: 50px;
+  max-width: 700px;
+}
+
+.navbar .navbar-brand, .navbar div#navbarNav ul li a.nav-link {
+    color: #FFF;
+}
+
+.navbar .navbar-brand img{
+  width: 100px;
+  box-shadow: 5px 1px 4px 1px rgba(100,100,150,0.4);
+}
+
+.card {
+  border: none;
 }
 
 .carousel-indicators {
@@ -164,12 +540,6 @@ body {
   margin: auto;
 }
 
-.card-img.doodle {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
 .carousel-self-portrait {
   height: 90vh;
 }
@@ -181,4 +551,106 @@ div.card-img-overlay.poster: hover {
 
 .modal-body {
   padding: 2rem;
+}
+
+div#animation p.animation-header {
+  max-height:500px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 2.5rem;
+}
+
+div#animation {
+  max-width: 1300px;
+}
+
+div#illustration p.illustration-header {
+  max-height:500px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 2.2rem;
+}
+
+div.animation-text, div.illustration-text {
+  border-right: 3px solid #000;
+}
+
+div#aboutSection {
+}
+
+div.aboutSectionSkew {
+}
+
+div#workItemsWrapper {
+  max-width: 1000px;
+  padding: 50px 50px 0 50px;
+}
+
+.work-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.work-item-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.work-item-img:hover {
+  opacity: 0.5;
+}
+
+div#titleBox {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+div#titleWrapper {
+    padding-left: 25px;
+}
+
+.video-wrapper.col-lg-6.mx-auto {
+    padding-top: 30px;
+}
+
+h2.logo-text {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 5rem;
+    line-height: 68px;
+}
+
+p.logo-text {
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.row.img-blocks {
+
+}
+
+.top-pic {
+    height: 400px;
+    overflow: hidden;
+}
+
+.bottom-pic {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-body.small-description {
+  padding-top: 0;
+}
+
+ .card.small-description {
+   padding-right: 15px;
+ }
+
+.row.content-row {
+  margin-right: 0;
 }

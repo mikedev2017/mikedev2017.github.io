@@ -121,14 +121,14 @@
   }
 
   .navbar {
-      padding: .5rem 0.58rem .5rem 0rem;
+      padding: .5rem 0rem .5rem 0rem;
   }
 
   .navbar-brand {
       display: inline-block;
       padding-top: .3125rem;
       padding-bottom: .3125rem;
-      margin-left: 30px;
+      margin-left: 15px;
       margin-right: 1rem;
       margin-top: -40px;
       font-size: 1.25rem;

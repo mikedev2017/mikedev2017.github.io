@@ -8,121 +8,49 @@
       2D and 3D animations, videos, video games, websites, paintings...I create, therefore I am. Welcome to my portfolio site.">
     <meta name="author" content="Mike Williams">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/custom.css">
 
-    <title>Mike Williams Designs</title>
+    <title>Mike Williams Works</title>
   </head>
   <body>
 
-  <div id="content-wrapper">
-
-  <div class="header">
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="./">
-        <img class="img-fluid rounded-circle" src="./images/profile-caricature.jpg" alt="avatar">
-        MWAnimationWork
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fas fa-bars text-white"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link selected" href="index.html">WORK<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
+  <section class="main">
+    <header>
+        <a href="index.html"><img class="logo" src="./images/mike-williams-works-logo.png" alt="l"></a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+          <li><a href="index.html">WORK</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html" class="contact-button">CONTACT</a></li>
         </ul>
-      </div>
-    </nav>
-  </div>
+    </header>
 
-  <div class="px-0" id="body">
-    <div class="container-fluid" id="workItemsWrapper">
-      <div class="work-items-row row">
-        <div class="work-item col-md-3">
-          <a href="./logo-bumpers.html"><img class="work-item-img" src="./images/work-thumbnails/logo-bumpers-thumbnail.jpg" alt="Logo Bumpers Thumbnail"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./explainer-videos.html"><img class="work-item-img" src="./images/work-thumbnails/explainer-animation-thumbnail.jpg" alt="Explainer Animations"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./lunar-resort-site.html"><img class="work-item-img" src="./images/work-thumbnails/lunar-resort-mobile.png" alt="Lunar Resort Theme"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./portfolio-v1.html"><img class="work-item-img" src="./images/work-thumbnails/portfolio-site-v1.png" alt="Portfolio Site v1"></a>
-        </div>
-      </div>
-
-      <div class="work-items-row row">
-        <div class="work-item col-md-3">
-          <a href="./pumpkin-eater.html"><img class="work-item-img" src="./images/work-thumbnails/peter-peter-pumpkin-eater.png" alt="Peter Peter Pumpkin Eater Thumbnail"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./reno-promos.html"><img class="work-item-img" src="./images/work-thumbnails/reno-promo-thumbnail.jpg" alt="Reno Promos Thumbnail"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./hat-no-cattle.html"><img class="work-item-img" src="./images/work-thumbnails/all-hat-no-cattle-thumbnail.jpg" alt="All Hat and No Cattle Thumbnail"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./turkeys-revenge.html"><img class="work-item-img" src="./images/work-thumbnails/turkeys-revenge.png" alt="Turkey's Revenge Thumbnail"></a>
-        </div>
-      </div>
-
-      <div class="work-items-row row">
-        <div class="work-item col-md-3">
-          <a href="./wally-gameplay-demo.html"><img class="work-item-img" src="./images/work-thumbnails/wally-game-demo.png" alt="Wally Game Demo Reel Thumbnail"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./apartment-gameplay-demo.html"><img class="work-item-img" src="./images/work-thumbnails/apartment_hallway_run_screenshot.png" alt="2D Pixel Level Design Game Art Thumbnail"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./self-portrait.html"><img class="work-item-img" src="./images/work-thumbnails/mike-self-portrait-04-15-16.png" alt="Profile Self Portrait Thumbnail"></a>
-        </div>
-        <div class="work-item col-md-3">
-          <a href="./caricature.html"><img class="work-item-img" src="./images/work-thumbnails/caricature.jpg" alt="Sheree Caricature"></a>
-        </div>
-      </div>
+    <div class="content">
+      <li>
+        <a href="animation.html" class="animation-thumbnail up"><img src="./images/work-thumbnails/reno-homepage-thumbnail.png" alt="Animation Thumbnail"><span>Animation</span></a>
+        <a href="motion.html" class="motion-thumbnail down"><img src="./images/work-thumbnails/motion-graphics-homepage-thumbnail.png" alt="Motion Graphics Thumbnail"><span>Motion</span></a>
+        <a href="illustration.html" class="illustration-thumbnail up"><img src="./images/work-thumbnails/illustration-homepage-thumbnail.png" alt="Illustration Thumbnail"><span>Sketches</span></a>
+        <a href="games.html" class="games-thumbnail down"><img src="./images/work-thumbnails/game-design-homepage-thumbnail.png" alt="Game Design Link"><span>Games</span></a>
+      </li>
     </div>
 
-  </div>
+    <div class="footer">
+      <ul class="social-media">
+        <span class="follow">FOLLOW ME</span>
+        <li>
+          <a href="https://www.youtube.com/channel/UC5Dj-tPTYQTmZK902k_yxig"><span><i class="fab fa-youtube fa-2x"></i></span></a>
+          <a href="https://vimeo.com/user6132688"><span><i class="fab fa-vimeo fa-2x"></i></span></a>
+          <a href="https://www.instagram.com/mwanimationworks/"><span><i class="fab fa-instagram fa-2x"></i></span></a>
+          <a href="https://www.linkedin.com/in/michael-r-williams/"><span><i class="fab fa-linkedin fa-2x"></i></span></a>
+        </li>
+      </ul>
+      <p class="copyright">MRW©2022</p>
+    </div>
 
-  <div class="bg-transparent text-dark" id="footer">
-        <ul class="nav float-right">
-          <li class="nav-item try-these">
-            <a class="nav-link" href="https://www.youtube.com/channel/UC5Dj-tPTYQTmZK902k_yxig"><span><i class="fab fa-youtube fa-2x"></i></span></a>
-          </li>
-          <li class="nav-item try-these">
-            <a class="nav-link" href="https://vimeo.com/user6132688"><span><i class="fab fa-vimeo fa-2x"></i></span></a>
-          </li>
-          <li class="nav-item try-these">
-            <a class="nav-link" href="https://www.instagram.com/mwanimationworks/"><span><i class="fab fa-instagram fa-2x"></i></span></a>
-          </li>
-          <li class="nav-item try-these">
-            <a class="nav-link" href="https://www.linkedin.com/in/michael-r-williams/"><span><i class="fab fa-linkedin fa-2x"></i></span></a>
-          </li>
-          <li>
-            <p class="mb-0 mt-3 align-bottom text-white">MRW©2022</p>
-          </li>
-        </ul>
-  </div>
-
-  </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
-  </div>
+  </section>
   </body>
 </html>

@@ -26,7 +26,8 @@ const gameDescription03 = document.querySelector('.game-description-03');
 var controlPrevious = null;
 var controlNext = null;
 
-const infoCircle = document.querySelector('.fa-info-circle');
+const infoCircle = document.querySelector('.img-zoom-info');
+const infoCircles = document.querySelectorAll('.game-info-icon');
 
 const timeDelay = 200;
 
@@ -64,6 +65,12 @@ for (let g = 0; g < gameImages.length; g++) {
     selectedGameText.classList.add('view-game');
     body.classList.add('view-game');
     infoCircle.classList.add('active');
+  });
+}
+
+for (let i = 0; i < infoCircles.length; i++) {
+  infoCircles[i].addEventListener('click', function(){
+    infoCircles[i].nextElementSibling.click();
   });
 }
 

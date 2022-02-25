@@ -545,6 +545,7 @@ p.description{
   top: 0;
   left: 0;
   bottom: 0;
+	cursor: pointer;
   right: 0;
   width: 50%;
   pointer-events: auto;
@@ -592,6 +593,19 @@ p.description{
   opacity: 1;
   pointer-events: auto;
   transition: 0.5s ease;
+}
+.game-slide-container.active > i.fas.fa-info-circle.fa-2x.game-info-icon{
+	opacity: 1;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  text-align: right;
+  width: 50%;
+  cursor: pointer;
+  pointer-events: all;
+}
+.game-slide-container.active.view-game > i.fas.fa-info-circle.fa-2x.game-info-icon {
+	opacity: 0;
 }
 .game-slide-container.right {
   position: absolute;
@@ -1098,6 +1112,19 @@ main.view-game .game-previous-container{
     opacity: 1;
     pointer-events: auto;
   }
+	.game-slide-container.active > i.fas.fa-info-circle.fa-2x.game-info-icon {
+    opacity: 1;
+		left: auto;
+    position: absolute;
+    top: 40%;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    pointer-events: all;
+	}
+	.game-slide-container.active.view-game > i.fas.fa-info-circle.fa-2x.game-info-icon {
+		opacity: 0;
+	}
   .game-video.active {
     position: relative;
     padding: 7px;

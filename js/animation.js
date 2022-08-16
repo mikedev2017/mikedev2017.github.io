@@ -15,6 +15,12 @@ const anim01 = document.querySelector('.anim01');
 const anim02 = document.querySelector('.anim02');
 const anim03 = document.querySelector('.anim03');
 const anim04 = document.querySelector('.anim04');
+const anim05 = document.querySelector('.anim05');
+const anim06 = document.querySelector('.anim06');
+const anim07 = document.querySelector('.anim07');
+const anim08 = document.querySelector('.anim08');
+const anim09 = document.querySelector('.anim09');
+const anim10 = document.querySelector('.anim10');
 
 const animBackBtn = document.querySelector('.animation-back-button');
 const contactButton = document.querySelector('.contact-button');
@@ -24,12 +30,12 @@ const timeDelay = 200;
 var selectedAnimSlide = anim01;
 var animationVideoSlidesNumber = 0;
 
-let animationVideoSlides = [anim01, anim02, anim03, anim04];
+let animationVideoSlides = [anim01, anim02, anim03, anim04, anim05, anim06, anim07, anim08, anim09, anim10];
 
-var previousSlide = anim04;
+var previousSlide = anim09;
 var nextSlide = anim02;
 var nextSlideNumber = 1;
-var previousSlideNumber = 3;
+var previousSlideNumber = 9;
 
 toggle.onclick = function(){
   toggle.classList.toggle('active');

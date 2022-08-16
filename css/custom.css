@@ -94,19 +94,19 @@ body{
   opacity: 0;
 }
 .main.animation:before{
-  content: 'ANIMATION ANIMATION ANIMATION';
+  content: 'ANIMATION CARTOON MOTION';
 }
 .main.illustration:before{
-  content: 'SKETCHES SKETCHES SKETCHES';
+  content: 'SKETCHES DOODLES ILLUSTRATION';
 }
 .main.game:before{
-  content: 'GAMES GAMES GAMES';
+  content: 'INDIE GAMES UNITY';
 }
 .main.motion:before{
-  content: 'MOTION MOTION MOTION';
+  content: 'MODELING TEXTURING RENDERING';
 }
 .main.contact:before{
-  content: 'CONTACT CONTACT CONTACT';
+  content: 'CONTACT EMAIL WRITE';
 }
 .main.about:before{
   content: '';

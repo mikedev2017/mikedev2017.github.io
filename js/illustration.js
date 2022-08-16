@@ -18,12 +18,16 @@ const illus03 = document.querySelector('.illus03');
 const illus04 = document.querySelector('.illus04');
 const illus05 = document.querySelector('.illus05');
 const illus06 = document.querySelector('.illus06');
+const illus07 = document.querySelector('.illus07');
+const illus08 = document.querySelector('.illus08');
 const illusDesc01 = document.querySelector('.illus-desc-01');
 const illusDesc02 = document.querySelector('.illus-desc-02');
 const illusDesc03 = document.querySelector('.illus-desc-03');
 const illusDesc04 = document.querySelector('.illus-desc-04');
 const illusDesc05 = document.querySelector('.illus-desc-05');
 const illusDesc06 = document.querySelector('.illus-desc-06');
+const illusDesc07 = document.querySelector('.illus-desc-07');
+const illusDesc08 = document.querySelector('.illus-desc-08');
 
 const infoCircle = document.querySelector('.fa-info-circle');
 
@@ -36,12 +40,12 @@ var selectedIllusSlide = illus01;
 var selectedIllusText = illusDesc01;
 var illustrationSlidesNumber = 0;
 
-let illustrationSlides = [illus01, illus02, illus03, illus04, illus05, illus06];
-let illustrationDescriptions = [illusDesc01, illusDesc02, illusDesc03, illusDesc04, illusDesc05, illusDesc06];
+let illustrationSlides = [illus01, illus02, illus03, illus04, illus05, illus06, illus07, illus08];
+let illustrationDescriptions = [illusDesc01, illusDesc02, illusDesc03, illusDesc04, illusDesc05, illusDesc06, illusDesc07, illusDesc08];
 
 var chosenText = illusDesc01;
 
-var previousSlide = illus06;
+var previousSlide = illus08;
 var nextSlide = illus02;
 var nextSlideNumber = 1;
 var previousSlideNumber = 5;

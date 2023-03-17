@@ -1025,8 +1025,17 @@ main.view-game .game-previous-container{
   }
 }
 
+@media (min-width: 801px) {
+	.main{
+    padding: 120px 60px;
+  }
+}
+
 @media (max-width: 600px) {
-	.main:before{
+	.main{
+    padding: 30px 60px;
+  }
+  .main:before{
 		font-size: 57vw;
 	}
 	.main.no-page:before{

@@ -24,11 +24,26 @@
         <a href="index.html"><img class="logo" src="./images/mike-williams-works-logo.png" alt="l"></a>
         <div class="toggle"></div>
         <ul class="navigation">
-          <li><a href="index.html">WORK</a></li>
-          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="2d-works.html">SKETCHES</a></li>
+          <li><a href="3d-works.html">3D</a></li>
+          <li><a href="animation.html">ANIMATION</a></li>
+          <li><a href="games.html" class="active">GAMES</a></li>
           <li><a href="contact.html" class="contact-button">CONTACT</a></li>
         </ul>
     </header>
+
+    <div class="game-content">
+      <div class="flex-container">
+        <div class="flex-item-game-first myGame" title="Elevader" data-mwvid="https://www.youtube.com/embed/QwkDCLTxkPk?&enablejsapi=1"></div>
+        <div class="flex-item-game-second myGame" title="Apartment Runner" data-mwvid="https://player.vimeo.com/video/342859158"></div>
+        <div class="flex-item-game-third myGame" title="Wally" data-mwvid="https://www.youtube.com/embed/8JGhKRG698U?&enablejsapi=1"></div>
+      </div>
+      <div id="gameModal" class="modal">
+        <span class="close">&times;</span>
+        <iframe class="modal-content" id="video01" frameborder="0" src="" allowfullscreen></iframe>
+        <div id="caption"></div>
+      </div>
+    </div>
 
     <div class="footer">
       <ul class="social-media">
@@ -43,82 +58,65 @@
       <p class="copyright">MRW©2023</p>
     </div>
 
-    <div class="game-container active">
-      <div class="close-button game-close-button">X</div>
-      <div class="game-content">
-        <div class="game-slide-container game01-container active">
-          <i class="fas fa-info-circle fa-2x game-info-icon"></i>
-          <img class="game-img game01 active" src="images\game\apartment-runner-cover.png" alt="Apartment Runner Prototype">
-          <iframe class="game-video game-video-01 active" frameborder="0" src="https://player.vimeo.com/video/342859158" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <div class="game-slide-container game02-container">
-          <i class="fas fa-info-circle fa-2x game-info-icon"></i>
-          <img class="game-img game02" src="images\game\wally-cover.png" alt="Wally Game Prototype">
-          <iframe class="game-video game-video-02" frameborder="0" src="https://www.youtube.com/embed/8JGhKRG698U?&enablejsapi=1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <div class="game-slide-container game03-container">
-          <i class="fas fa-info-circle fa-2x game-info-icon"></i>
-          <img class="game-img game03" src="images\game\elevader-cover.jpg" alt="Elevader">
-          <iframe class="game-video game-video-03" frameborder="0" src="https://www.youtube.com/embed/QwkDCLTxkPk?&enablejsapi=1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="game-description game-description-01 active">
-        <p>
-          A personal video game project that follows the story of someone trying
-          to survive an alien invasion. This covers the first level, which
-          requires the player to escape the apartment building, full of debris
-          and pitfalls. Can the player escape as the lights begin to flicker and
-          fade? What awaits them on the outside?
-        </p><br>
-        <h3>Features:</h3>
-        <ul>
-          <li>2D Platformer developed in Unity, written in JavaScript</li>
-          <li>Randomly generated levels</li>
-          <li>2D sprite animations</li>
-          <li>Repeatable tiles</li>
-          <li>Pitfalls, debris, and flickering lights</li>
-        </ul>
-      </div>
-      <div class="game-description game-description-02">
-        <p>
-          This is a game concept for a 3D platformer that follows a scientist, armed only
-          with exploding beakers, as he travels across the multiverse. This demo focuses
-          on a two-part jungle level in which Wally must jump gaps, dodge fireballs, survive
-          a tunnel of rotating guillotines, and finally defeat the temple boss: a floating
-          Easter Island head statue.
-        </p><br>
-        <h3>Features:</h3>
-        <ul>
-          <li>3D Platformer developed in Unity</li>
-          <li>Boss Fight</li>
-          <li>Animated life bar</li>
-          <li>Portals</li>
-          <li>Falling platforms, fireballs, and swinging guillotines</li>
-        </ul>
-      </div>
-      <div class="game-description game-description-03">
-        <p>
-          A crazed A.I.  has trapped you on an elevator. You get to be the first
-          human test subject to see how well it performs. Lucky you!
-
-          Can you survive 100 floors of randomized attacks and defeat the A.I.
-          to escape?
-
-          Tell the World and stop it from taking over, before it's too late!
-        </p><br>
-        <h3>Features:</h3>
-        <ul>
-          <li>Randomized gameplay</li>
-          <li>Multiple difficulty levels</li>
-          <li>Multiple control options</li>
-          <li>High score system</li>
-          <li>2D game made in Unity</li>
-        </ul>
-      </div>
+    <div id="game-description-01">
+    <div class="game-description game-description-01">
+      <p>
+        A personal video game project that follows the story of someone trying
+        to survive an alien invasion. This covers the first level, which
+        requires the player to escape the apartment building, full of debris
+        and pitfalls. Can the player escape as the lights begin to flicker and
+        fade? What awaits them on the outside?
+      </p><br>
+      <h3>Features:</h3>
+      <ul>
+        <li>2D Platformer developed in Unity, written in JavaScript</li>
+        <li>Randomly generated levels</li>
+        <li>2D sprite animations</li>
+        <li>Repeatable tiles</li>
+        <li>Pitfalls, debris, and flickering lights</li>
+      </ul>
     </div>
-    <span class="game-previous-container active"><i class="fas fa-chevron-circle-left fa-2x game-previous control-previous active"></i></span>
-    <span class="game-next-container active"><i class="fas fa-chevron-circle-right fa-2x game-next control-next active"></i></span>
-    <i class="fas fa-info-circle fa-2x img-zoom-info"></i>
+    </div>
+    <div id="game-description-02">
+    <div class="game-description game-description-02">
+      <p>
+        This is a game concept for a 3D platformer that follows a scientist, armed only
+        with exploding beakers, as he travels across the multiverse. This demo focuses
+        on a two-part jungle level in which Wally must jump gaps, dodge fireballs, survive
+        a tunnel of rotating guillotines, and finally defeat the temple boss: a floating
+        Easter Island head statue.
+      </p><br>
+      <h3>Features:</h3>
+      <ul>
+        <li>3D Platformer developed in Unity</li>
+        <li>Boss Fight</li>
+        <li>Animated life bar</li>
+        <li>Portals</li>
+        <li>Falling platforms, fireballs, and swinging guillotines</li>
+      </ul>
+    </div>
+    </div>
+    <div id="game-description-03">
+    <div class="game-description game-description-03">
+      <p>
+        A crazed A.I.  has trapped you on an elevator. You get to be the first
+        human test subject to see how well it performs. Lucky you!
+
+        Can you survive 100 floors of randomized attacks and defeat the A.I.
+        to escape?
+
+        Tell the World and stop it from taking over, before it's too late!
+      </p><br>
+      <h3>Features:</h3>
+      <ul>
+        <li>Randomized gameplay</li>
+        <li>Multiple difficulty levels</li>
+        <li>Multiple control options</li>
+        <li>High score system</li>
+        <li>2D game made in Unity</li>
+      </ul>
+    </div>
+    </div>
 
     <script src="./js/games.js"></script>
   </section>

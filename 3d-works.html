@@ -24,15 +24,30 @@
         <a href="index.html"><img class="logo" src="./images/mike-williams-works-logo.png" alt="l"></a>
         <div class="toggle"></div>
         <ul class="navigation">
-          <li><a href="index.html">WORK</a></li>
-          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="2d-works.html">SKETCHES</a></li>
+          <li><a href="3d-works.html" class="active">3D</a></li>
+          <li><a href="animation.html">ANIMATION</a></li>
+          <li><a href="games.html">GAMES</a></li>
           <li><a href="contact.html" class="contact-button">CONTACT</a></li>
         </ul>
     </header>
 
+    <div class="sketch-content">
+      <div class="flex-container">
+        <div class="flex-item-3d-first myImg" title="Old West Outhouse"></div>
+        <div class="flex-item-3d-second myImg" title="Pot and Pan 01"></div>
+        <div class="flex-item-3d-third myImg" title="Pot and Pan 02"></div>
+        <div class="flex-item-3d-fourth myImg" title="Sculpted Bust"></div>
+      </div>
+      <div id="sketchModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+    </div>
+
     <div class="footer">
       <ul class="social-media">
-        <span class="follow">FOLLOW ME</span>
         <li>
           <a href="https://www.youtube.com/channel/UC5Dj-tPTYQTmZK902k_yxig"><span><i class="fab fa-youtube fa-2x"></i></span></a>
           <a href="https://vimeo.com/user6132688"><span><i class="fab fa-vimeo fa-2x"></i></span></a>
@@ -42,23 +57,6 @@
       </ul>
       <p class="copyright">MRW©2023</p>
     </div>
-    <div class="illustration-container active">
-      <div class="close-button illustration-close-button">X</div>
-      <div class="illustration-content">
-        <img class="illustration-img illus01 active" src="images\3d\cartoon-outhouse.png" alt="Cartoon Outhouse">
-        <img class="illustration-img illus02" src="images\3d\pot-and-pan-01.png" alt="Pot and Pan PBR">
-        <img class="illustration-img illus03" src="images\3d\pot-and-pan-02.png" alt="Pot and Pan PBR 02">
-        <img class="illustration-img illus04" src="images\3d\sculpted-bust.png" alt="Sculpted Bust">
-      </div>
-      <p class="illustration-description illus-desc-01">3D Modeled Cartoon Outhouse</p>
-      <p class="illustration-description illus-desc-02">3D Modeled PBR Pot and Pan</p>
-      <p class="illustration-description illus-desc-03">3D Modeled PBR Pot and Pan</p>
-      <p class="illustration-description illus-desc-04">Sculpted Bust/p>
-    </div>
-    <span class="illustration-previous-container active"><i class="fas fa-chevron-circle-left fa-2x illustration-previous control-previous active"></i></span>
-    <span class="illustration-next-container active"><i class="fas fa-chevron-circle-right fa-2x illustration-next control-next active"></i></span>
-    <i class="fas fa-info-circle fa-2x content-info-button"></i>
-
     <script src="./js/3d.js"></script>
   </section>
   </body>

@@ -17,10 +17,11 @@ var captionText = document.getElementById("caption");
 for (let i = 0; i < img.length; i++) {
   img[i].addEventListener('click', function(){
   modal.style.display = "block";
+  // swap out the smaller thumbnail image for the larger full-res image
   var styles = window.getComputedStyle(this);
-  var url = styles.backgroundImage.slice(5, -2);
+  var url = styles.backgroundImage.slice(5, -6);
   console.log(url);
-  modalImg.src = url;
+  modalImg.src = url+"-full.png";
   captionText.innerHTML = this.title;
   });
 }
@@ -29,6 +30,9 @@ for (let i = 0; i < img.length; i++) {
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+// and clear the image and captipn text to prevent flashes
+span.onclick = function() {
+  modalImg.src = '';
+  captionText.innerHTML = '';
   modal.style.display = "none";
 }

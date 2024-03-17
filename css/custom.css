@@ -637,6 +637,9 @@ div.game-description {
     font-weight: 400;
     text-align: initial;
 }
+div.game-description.game-description-01 {
+    margin-top: -52px;
+}
 
 div#game-description-01,
 div#game-description-02,
@@ -1518,6 +1521,9 @@ main.view-game .game-previous-container{
       font-size: 1em;
       font-weight: 400;
       text-align: initial;
+  }
+  .main.game.view-game div.game-container div.game-description.game-description-01 {
+    margin-top: -52px;
   }
   .footer {
     padding: 15px 60px;
